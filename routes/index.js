@@ -15,11 +15,11 @@ router.get('/tours', async function (req, res, next) {
   } catch (err) {
     res.status(404).json({
       status: 'fail',
-      message: err,
+      message: err, 
     })
   }
 })
-
+// ayush sojitra
 router.get('/tours/id?', async function (req, res, next) {
   try {
     let allTour = await Tour.find()
